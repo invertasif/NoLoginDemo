@@ -14,6 +14,7 @@
 		E0F804801EC9CDC70099FBA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F8047E1EC9CDC70099FBA2 /* LaunchScreen.storyboard */; };
 		E0F8048B1EC9CDC70099FBA2 /* NoLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F8048A1EC9CDC70099FBA2 /* NoLoginTests.swift */; };
 		E0F804961EC9CDC70099FBA2 /* NoLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F804951EC9CDC70099FBA2 /* NoLoginUITests.swift */; };
+		E0F804A41EC9CFE90099FBA2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F804A31EC9CFE90099FBA2 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E0F804911EC9CDC70099FBA2 /* NoLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F804951EC9CDC70099FBA2 /* NoLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLoginUITests.swift; sourceTree = "<group>"; };
 		E0F804971EC9CDC70099FBA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0F804A31EC9CFE90099FBA2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				E0F804751EC9CDC70099FBA2 /* AppDelegate.swift */,
+				E0F804A31EC9CFE90099FBA2 /* LoginViewController.swift */,
 				E0F804771EC9CDC70099FBA2 /* ViewController.swift */,
 				E0F804791EC9CDC70099FBA2 /* Main.storyboard */,
 				E0F8047C1EC9CDC70099FBA2 /* Assets.xcassets */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0F804A41EC9CFE90099FBA2 /* LoginViewController.swift in Sources */,
 				E0F804781EC9CDC70099FBA2 /* ViewController.swift in Sources */,
 				E0F804761EC9CDC70099FBA2 /* AppDelegate.swift in Sources */,
 			);

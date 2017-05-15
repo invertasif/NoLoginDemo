@@ -16,7 +16,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UINavigationBar.appearance().backgroundColor = UIColor.blue
+        
+        // get the user default file
+        let defaults = UserDefaults.standard
+        
+        // get authentication value
+        let logdIn = defaults.bool(forKey: "isAuth")
+        let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
+
+        if logdIn {
+            
+            let navController = storyBoard.instantiateInitialViewController()
+            self.window?.rootViewController = navController
+            
+            
+        } else {
+            let loginScreen = storyBoard.instantiateViewController(withIdentifier: "loginScreen")
+            self.window?.rootViewController = loginScreen
+        }
+        
+        
+  
+        
         return true
+    }
+    
+    func logOut() {
+        
+        let defaults = UserDefaults.standard
+        // get authentication value
+        defaults.set(false, forKey: "isAuth")
+        let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let loginScreen = storyBoard.instantiateViewController(withIdentifier: "loginScreen")
+        self.window?.rootViewController = loginScreen
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
